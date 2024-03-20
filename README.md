@@ -1,4 +1,4 @@
-# IndividualProject
+# MindScape Hub
 Information on project:
 
 [INFO HERE]
