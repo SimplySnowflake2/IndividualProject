@@ -11,7 +11,7 @@ Features and Goals:
 ## UI and Logic Planning
 Class Diagram
 
-![Class Diagram]()
+![Class Diagram](https://github.com/SimplySnowflake2/IndividualProject/blob/main/images/UMLTest.png?raw=true)
 
 GUI Mockup
 
