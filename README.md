@@ -17,8 +17,5 @@ GUI Mockup
 
 ![GUI Mockups](https://github.com/SimplySnowflake2/IndividualProject/blob/main/images/GUITest.png?raw=true)
 
-Start Screen
-
-![Start Screen]()
 
 
