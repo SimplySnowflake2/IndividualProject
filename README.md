@@ -15,7 +15,7 @@ Class Diagram
 
 GUI Mockup
 
-![GUI Mockups]()
+![GUI Mockups](https://github.com/SimplySnowflake2/IndividualProject/blob/main/images/GUITest.png?raw=true)
 
 Start Screen
 
