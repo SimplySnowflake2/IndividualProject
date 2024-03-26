@@ -176,18 +176,23 @@ void pageSelector() { // Replaces method("") for PJS
 
   case 2:
     page2();
+    break;
 
   case 3:
     page3();
+    break;
 
   case 4:
     page4();
+    break;
 
   case 5:
     page5();
+    break;
 
   case 6:
     page6();
+    break;
   }
 }
 
@@ -195,8 +200,6 @@ void pageSelector() { // Replaces method("") for PJS
 //https://processing.org/examples/scrollbar.html
 //https://processing.org/examples/clock.html
 //https://processing.org/examples/
-
-//https://studio.processingtogether.com/sp/pad/export/ro.9eDRvB4LRmLrr
 
 //https://codeguppy.com/code.html?t=blocky
 //https://codeguppy.com/code.html?t=artist
