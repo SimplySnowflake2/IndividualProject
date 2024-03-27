@@ -1,16 +1,18 @@
-//https://studio.processingtogether.com/sp/pad/export/ro.9eDRvB4LRmLrr 
+//https://studio.processingtogether.com/sp/pad/export/ro.9eDRvB4LRmLrr; GoToLoop
 
 class Button {
-  static final int W = 150, H = 50, TXTSZ = 020;
-  static final color BTNC = #000000, HOVC = #2C2C2C, TXTC = 250;
+  static final int W = 150, H = 50, TXTSZ = 14;
+  static final color BTNC = #000000, HOVC = #2C2C2C, TXTC = 0;
+  //HOVC = #CBCBCB
 
   final String label;
   final int x, y, xW, yH;
   color c1;
+  int txtc;
 
   boolean isHovering;
 
-  Button(String txt, int xx, int yy) {
+  Button(String txt, int xx, int yy, color c1, int txtc) {
     label = txt;
 
     x = xx;
@@ -18,16 +20,20 @@ class Button {
 
     xW = xx + W;
     yH = yy + H;
-    
-    //this.c1 = c1;
+
+    this.c1 = c1;
+    this.txtc = txtc;
   }
 
   void display() {
-    fill(isHovering? HOVC : BTNC);
+    fill(isHovering? HOVC : c1);
     rect(x, y, W, H);
 
-    fill(TXTC);
-    text(label, x + W/2, y + H/2);
+    textAlign(CENTER);
+    textFont(font2);
+    textSize(TXTSZ);
+    fill(txtc);
+    text(label, x + W/2, y + H/2 + 4);
   }
 
   boolean isInside() {

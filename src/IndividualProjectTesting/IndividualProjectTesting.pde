@@ -1,12 +1,8 @@
 //Sarah Zhang | Monday, March 18th, 2024 | Individual Project
-//https://studio.processingtogether.com/sp/pad/export/ro.9eDRvB4LRmLrr
+//https://studio.processingtogether.com/sp/pad/export/ro.9eDRvB4LRmLrr; GoToLoop
 
 static final int MAX = 6, GAP = 50, DIM = 120, RAD = DIM >> 1;
 int page, cx, cy;
-float secondsRadius;
-float minutesRadius;
-float hoursRadius;
-float clockDiameter;
 PFont font1, font2;
 
 Button back, next, app1, app2, app3, app4, app5, app6;
@@ -30,33 +26,25 @@ void setup() {
   cx = width  >> 1;
   cy = height >> 1;
 
-  back = new Button("BACK", GAP, height - Button.H - GAP);
-  next = new Button("NEXT", width - Button.W - GAP, height - Button.H - GAP + 20);
+  back = new Button("BACK", GAP, height - Button.H - GAP + 20, 0, 255);
+  next = new Button("NEXT", width - Button.W - GAP, height - Button.H - GAP + 20, 0, 255);
 
-  app1 = new Button("App 1", 68, 190);
-  app2 = new Button("App 2", width/2 - 75, 190);
-  app3 = new Button("App 3", 382, 190);
-  app4 = new Button("App 4", 68, 250);
-  app5 = new Button("App 5", width/2 - 75, 250);
-  app6 = new Button("App 6", 382, 250);
-
-  //Clock SetUp
-  //int radius = min(width, height) / 2;
-  //secondsRadius = radius * 0.72;
-  //minutesRadius = radius * 0.60;
-  //hoursRadius = radius * 0.50;
-  //clockDiameter = radius * 1.8;
-
-  //cx = width/2;
-  //cy = height/2;
+  app1 = new Button("App 1", 68, 190, #F29292, 0);
+  app2 = new Button("App 2", width/2 - 75, 190, #FFD2A8, 0);
+  app3 = new Button("App 3", 382, 190, #FFF4BD, 0);
+  app4 = new Button("App 4", 68, 250, #BEE9CB, 0);
+  app5 = new Button("App 5", width/2 - 75, 250, #AAD4EE, 0);
+  app6 = new Button("App 6", 382, 250, #D8C7FF, 0);
 }
 
 void draw() {
   background(0);
 
+  textAlign(CENTER);
+  textFont(font2);
   textSize(16);
-  fill(Button.TXTC);
-  text("Page #" + page, cx, 380);
+  fill(250);
+  text("Page #" + page, width/2, 380);
 
   textSize(Button.TXTSZ);
   if (page > 0)    back.display();
@@ -101,6 +89,7 @@ void mouseMoved() {
 void page0() {
   textAlign(CENTER);
 
+  fill(250);
   textFont(font1);
   textSize(42);
   text("MindScape Hub", width/2, 120);
@@ -112,44 +101,11 @@ void page0() {
 }
 
 void page1() {
-  fill(#FFFF00);
-  ////rect(cx - RAD, GAP*2 - RAD, DIM, DIM);
-  // Draw the clock background
-
-  //fill(80);
-  //noStroke();
-  //ellipse(cx, cy, clockDiameter, clockDiameter);
-
-  //// Angles for sin() and cos() start at 3 o'clock;
-  //// subtract HALF_PI to make them start at the top
-  //float s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
-  //float m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
-  //float h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
-
-  //// Draw the hands of the clock
-  //stroke(255);
-  //strokeWeight(1);
-  //line(cx, cy, cx + cos(s) * secondsRadius, cy + sin(s) * secondsRadius);
-  //strokeWeight(2);
-  //line(cx, cy, cx + cos(m) * minutesRadius, cy + sin(m) * minutesRadius);
-  //strokeWeight(4);
-  //line(cx, cy, cx + cos(h) * hoursRadius, cy + sin(h) * hoursRadius);
-
-  //// Draw the minute ticks
-  //strokeWeight(2);
-  //beginShape(POINTS);
-  //for (int a = 0; a < 360; a+=6) {
-  //  float angle = radians(a);
-  //  float x = cx + cos(angle) * secondsRadius;
-  //  float y = cy + sin(angle) * secondsRadius;
-  //  vertex(x, y);
-  //}
-  //endShape();
+  //fill(#FFFF00);
 }
 
 void page2() {
-  fill(#008000);
-  //triangle(cx, GAP*2 - RAD, cx - RAD, GAP*2 + RAD, cx + RAD, GAP*2 + RAD);
+  //fill(#008000);
 }
 
 void page3() {
