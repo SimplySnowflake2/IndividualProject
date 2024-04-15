@@ -9,7 +9,7 @@ This project will be application based, with various buttons on the home screen 
 ## Project Objective
 Features and Goals:
 
-[TYPE HERE]
+To make an app with a bunch or random little mini apps, in the hopes that the user will find at least one of them cool. This is so that I can have a larger audience for the app, when there are a few different apps for different audiences. 
 
 ## UI and Logic Planning
 Class Diagram
