@@ -14,7 +14,7 @@ To make an app with a bunch or random little mini apps, in the hopes that the us
 ## UI and Logic Planning
 Class Diagram
 
-![Class Diagram](https://github.com/SimplySnowflake2/IndividualProject/blob/main/images/UML2.png?raw=true)
+![Class Diagram](https://github.com/SimplySnowflake2/IndividualProject/blob/main/images/MindscapeHub.png?raw=true)
 
 GUI Mockup
 
