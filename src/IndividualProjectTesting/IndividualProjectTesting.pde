@@ -68,7 +68,7 @@ void setup() {
   app2 = new Button("App 2", width/2 - 75, 190, #FFD2A8, 0); //Draw
   app3 = new Button("Random Bubbles", 382, 190, #FFF4BD, 0);
   app4 = new Button("Guess the Number", 68, 250, #BEE9CB, 0);
-  app5 = new Button("App 5", width/2 - 75, 250, #AAD4EE, 0);
+  app5 = new Button("? Digits of Pi", width/2 - 75, 250, #AAD4EE, 0);
   app6 = new Button("App 6", 382, 250, #D8C7FF, 0);
 
   //Clock:
